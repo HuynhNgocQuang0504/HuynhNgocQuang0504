@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1980px;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu>ul>li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu ul {
+            height: 70px;
+        }
+
+        .login {
+            float: right;
+            margin: 10px;
+            top: -10px;
+        }
+
+        .menu>ul>li>a {
+            display: block;
+            text-decoration: none;
+            font-variant: small-caps;
+            color: white;
+            padding: 0px 10px;
+            line-height: 40px;
+        }
+
+        .menu>ul>li>a:hover {
+            color: yellow
+        }
+
+        .menu>ul {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            border-radius: 3x;
+            background-color: #24252a;
+            text-align: center;
+        }
+
+        .menu ul ul {
+            position: absolute;
+            display: none;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            border-radius: 3px;
+            width: 200px;
+            background-color: #24252a;
+            box-shadow: 0px 0px 1px gray;
+        }
+
+        .menu ul ul a {
+            display: block;
+            line-height: 30px;
+            color: orangered;
+            text-decoration: none;
+            font-size: medium;
+            padding: 0 10px;
+        }
+
+        .menu>ul>li:hover>ul {
+            display: block;
+        }
+
+        .menu ul ul a:hover {
+            background-color: orangered;
+            color: white;
+        }
+
+        main {
+            max-width: 1300px;
+            margin: 0 auto;
+            height: auto;
+
+        }
+
+        .sanpham {
+
+            height: 550px;
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        .left {
+            width: 35%;
+            float: left;
+            height: 300px;
+        }
+
+        .right {
+            width: 64%;
+            float: left;
+            height: 300px;
+            padding: 20px;
+
+        }
+
+        .niemyet {
+            border-radius: 10px;
+            box-shadow: 0 0 5px gray;
+            margin: 5px;
+            padding: 5px;
+            line-height: 80px;
+            font-size: xx-large;
+            text-align: center;
+            color: orangered;
+        }
+
+        label {
+            float: left;
+            padding: 30px;
+        }
+
+        .vnom {
+            margin: 10px;
+            margin-top: -4px;
+            margin-bottom: 10px;
+            margin-left: -4px;
+            padding: 30px;
+
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        input {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .vnu {
+            margin: 10px;
+            margin-top: -4px;
+            margin-bottom: 10px;
+            margin-left: -4px;
+            padding: 30px;
+            box-shadow: 0 0 5px gray;
+            float: left;
+
+        }
+
+        .color {
+            background-color: red;
+            color: white;
+
+        }
+
+        .end {
+            width: 1300px;
+            margin: auto;
+            height: 300px;
+
+        }
+
+
+
+        h2 {
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .link {
+            width: auto;
+            border-radius: 10px;
+            clear: both;
+            margin: 10px;
+        }
+
+        .dowload img {
+            padding-top: 10px;
+            clear: both;
+        }
+
+        .trailer {
+            margin: 10px;
+            padding-bottom: 20px;
+        }
+
+        .thongtin>h2 {
+            height: 30px;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: aqua;
+
+        }
+        .vnm {
+            padding: 30px;
+        }
+        footer {
+    height: 300px;
+    float: left;
+    width: 100%;
+    background-color: #24252a;
+    clear: both;
+    color: #fef8e6;
+}
+
+.box .thongtin {
+    float: left;
+    list-style: none;
+
+}
+.box {
+    width: 33.33%;
+    float: left;
+}
+li {
+    padding: 5px 0;
+}
+
+li:hover {
+    color: yellow;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="containerfull padd20">
+        <div class="container2">
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a> </li>
+                    <li>
+                        <a href="#">Liên hệ</a>
+                        <ul>
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Góp ý</a> </li>
+                    <li><a href="#">Hỏi đáp</a> </li>
+                    <li><a href="#">Bản đồ</a> </li>
+                    <li class="login"><a href="./dangnhap.html">Đăng Nhập</a></li>
+                    <li class="login"><a href="./dangkiemail.html">Đăng kí</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="sanpham">
+            <div class="left">
+                <img src="../img/asus2.webp" alt="" width="100%">
+            </div>
+            <div class="right">
+                <div>
+                    <h2>Laptop gaming ASUS ROG Strix G15 G513IE HN246W</h2>
+                </div>
+                <div class="niemyet">
+                    <del>24,000,000đ</del>
+                    22,490,000₫</div>
+                <div>
+                    <label for="">Bảo hiểm</label>
+                    <div class="vnom">bảo hiểm thiết bị điện tử
+                        <a href="#">tiềm hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="ship">
+                    <label for="" class="now">vận chuyển</label>
+                    <div class="vnom now">miễn phí vận chuyển
+                    </div>
+                </div>
+                <div>
+                    <button>Số lượng</button>
+                    <input type="text">
+                    <button>5 Sản phẩm có sẵn</button>
+                </div>
+                <div class="vnom">
+                    <button class="vnu">Thêm vào giở hàng</button>
+                    <button class="vnu color">Mua Ngay</button>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="trailer">
+            <div class="chitiet">
+                <h2>Chi tiết sản phẩm</h2>
+                <p>CPU:Intel Core i5-12450H Processor 2 GHz (12M Cache, up to 4.4 GHz, 8 cores: 4 P-cores and 4 E-cores)
+                </p><br>
+                <p>RAM:8GB DDR5 4800MHz (2 x SO-DIMM, tối đa 32GB)</p><br>
+                <p>Ổ cứng:512GB M.2 PCIe NVMe 3.0</p><br>
+                <p>Card đồ họa: NVIDIA® GeForce RTX™ 3050 4GB DDR6, 1550MHz* at 75W (1500MHz Boost Clock+50MHz OC,
+                    60W+15W Dynamic Boost)</p><br>
+                <p>Màn hình: 15.6 inch FHD (1920 x 1080) 144Hz, IPS-level, anti-glare, sRGB:62.5%, Adobe:47.34%,
+                    Adaptive-Sync, MUX Switch + Optimus</p><br>
+                <p>Cổng giao tiếp: <br>
+                    1x 3.5mm Combo Audio Jack <br>
+                    1x HDMI 2.0b <br>
+                    1x Thunderbolt™ 4 support DisplayPort™<br>
+                    1x USB 3.2 Gen 2 Type-C support DisplayPort™ / power delivery / G-SYNCbr <br>
+                    2x USB 3.2 Gen 1 Type-Abr <br>
+                    1x RJ45 LAN port</p><br>
+                <p>Audio: <br>
+                    AI noise-canceling technology <br>
+                    Dolby Atmos <br>
+                    Hi-Res certification</p><br>
+                <p>Bàn phím: Backlit Chiclet Keyboard</p> <br>
+                <p>Chuẩn LAN: 10/100/1000 Mbps</p> <br>
+                <p>Chuẩn WIFI: Wi-Fi 6(802.11ax)</p> <br>
+                <p>Bluetooth: Bluetooth V5.2</p> <br>
+                <p>Webcam: 720P HD camera</p> <br>
+                <p>Hệ điều hành: Window 11 Home</p>
+                <p>Pin: 4 Cell 76Whr</p> <br>
+                <p>Trọng lượng: 2 kg</p> <br>
+                <p>Màu sắc: Moon Light</p> <br>
+                <p>Kích thước: 35.4 x 25.1 x 1.99 cm</p>
+
+            </div>
+            <hr>
+            <div class="mota">
+                <h2>Mô tả sản phẩm</h2>
+            </div>
+            <div>
+                <img src="../img/danhgia0.webp" alt="" width="300px" align="center"><br>
+                Asus TUF Dash F15 FX517ZC HN079W là một trong những dòng laptop gaming có thiết kế táo bạo và mạnh mẽ sẽ
+                giúp bạn đa nhiệm nhiều hơn trên một chiếc máy tính xách tay đủ nhẹ để mang đi khắp mọi nơi. <br>
+                <br>
+                <b>Hiệu năng tuyệt vời</b> <br>
+                Luôn sẵn sàng cho mọi hành trình, xử lý dễ dàng mọi tác vụ dù là chơi game, phát trực tiếp và hơn thế
+                nữa. Sức mạnh CPU Intel Core i5-12450H phù hợp để giải trí và làm việc hàng ngày. Đồ họa nhanh và mượt
+                mà với GPU NVIDIA GeForce RTX 3050 4GB DDR6, 1550MHz mang lại tốc độ khung hình cao ổn định.
+                <img src="../img/danhgia1.webp" alt="" width="300px"> <br>
+                <b>Màn hình 15.6 inch FHD IPS sắc nét</b> <br>
+                <img src="../img/danhgia2.webp" alt="" width="300px"> <br>
+                Chơi game tốc độ cao như game thủ chuyên nghiệp nhờ màn hình tấm nền IPS siêu nhanh với tần số quét lên
+                đến 144Hz. Với Adaptive-Sync, tần số quét của màn hình đồng bộ với tốc độ khung hình của GPU để giảm
+                thiểu hiện tượng giật, lag hay xé hình, cho trải nghiệm chơi game đắm chìm siêu mượt mà. <br>
+                <br>
+                <b>Bàn phím cho độ chính xác tuyệt hảo</b> <br>
+                Các phím W, A, S, D thường được các anh em dùng nhiều trong gaming được làm nổi bật, rực rỡ hơn so với
+                các phím khác trên bố cục để bạn dễ dàng xác định và sử dụng. <br>
+                <br>
+                <img src="../img/danhgia3.webp" alt="" width="300px"> <br>
+                <br>
+                Thiết kế bàn phím gõ yên lặng mới giúp duy trì âm thanh khi gõ, mang đến cho bạn trải nghiệm riêng tư
+                hơn. Bàn phím với bố cục như máy tính để bàn, có khoảng cách rộng giữa các phím chức năng, giúp bạn dễ
+                dàng nhận diện và gõ chính xác. <br>
+                <br>
+                Đồng thời, các hotkey cho phép bạn dễ dàng thao tác các lệnh quan trọng. Hành trình phím 1,7mm cho phép
+                thao tác nhấn phím nhẹ nhàng với khả năng tăng tốc độ gõ phím. Điều này, mang đến những trải nghiệm khi
+                chơi game trong nhiều giờ liền không khác gì các dòng bàn phím cơ đến từ các thương hiệu lớn có trên thị
+                trường. <br>
+                <br>
+                <b>Wi-Fi 6 siêu tốc độ hỗ trợ tối đa làm việc, chơi game</b> <br>
+                <img src="../img/danhgia4.webp" alt="" width="300px"> <br>
+                Wi-Fi 6 (802.11ax) siêu nhanh cho phép bạn chơi game ở tốc độ LAN tại bất kỳ đâu có kết nối tương thích.
+                Kết nối mạng nhanh hơn và hiệu quả hơn, điều này đặc biệt hữu ích tại các nơi đông đúc có lưu lượng truy
+                cập lớn. <br>
+                <br>
+                Wi-Fi 6 cũng sử dụng cơ chế Target Wake Time cập nhật giúp kéo dài thời lượng pin và tiêu chuẩn bảo mật
+                WPA3 giúp cải thiện bảo mật không dây. <br>
+                <br>
+                <b>Cổng kết nối đa dạng, tiện dụng</b> <br>
+                Về cổng kết nối của máy sở hữu khả năng kết nối đa dạng với nhiều cổng I/O cho phép bạn kết nối với cực
+                nhiều các thiết bị ngoại vi phục vụ cho công việc và giải trí. Bên cạnh phải máy, chỉ có 2 cổng USB 3.2
+                Gen 1 Type-A. <br>
+                <img src="../img/danhgia.webp" alt=""><br>
+                Còn ở cạnh trái được trang bị phong phú hơn với các cổng USB 3.2 Gen 1 Type-A , một cổng HDMI, một cổng
+                LAN RJ45, một combo jack 3.5mm, một jack nguồn sạc cho máy, việc trang bị cổng USB Type C with Power
+                Delivery and Thunderbolt 4 là một điểm cộng lớn cho Dash F15. Với các cổng kết nối vô cùng đa dạng,
+                người dùng có thể dễ dàng kết nối với chuột không dây, tai nghe, bàn phím rời,...hỗ trợ chơi game và làm
+                việc ở bất kỳ đâu. <br>
+                <br>
+                <b>Cổng Thunderbolt 4 cho tốc độ kết nối nhanh</b> <br>
+                <br>
+                Với 4x lưu lượng đầu ra của USB 3.1, Thunderbolt™ 4 cho phép kết nối nhanh với rất nhiều thiết bị khác
+                nhau. Sử dụng băng thông rộng để kết nối với GPU bên ngoài nhằm tăng sức mạnh đồ họa của bạn để chơi
+                game đẳng cấp Ultra HD hoặc xử lý 3D. <br>
+                <img src="../img/danhgia6.webp" alt=""><br>
+                Kết nối với trạm sạc để tạo thiết lập như máy tính để bàn ở bất kỳ đâu. Hỗ trợ DisplayPort™ 1.4 cho phép
+                bạn kết nối hai màn hình 4K ở 60Hz, hoặc một TV UHD 8K hoặc màn hình để có hình ảnh chân thực và đắm
+                chìm. <br>
+                <br>
+                <b>Độ bền đạt chuẩn quân đội</b> <br>
+                <br>
+                Để xứng đáng với tên gọi TUF Gaming, những chiếc laptop này phải vượt qua bài kiểm tra pin về độ bền
+                chuẩn quân đội MIL-STD-810H. Các bài kiểm tra cho thiết bị bao gồm thả rơi và va đập, độ ẩm cao và nhiệt
+                độ cực đoan nhằm đảm bảo độ laptop có thể hoạt động ổn định. <br>
+                <img src="../img/danhgia7.webp" alt=""> <br>
+                Một trong những dòng laptop gaming có thể vận hành ổn định ngay cả trong những môi trường khắc nghiệt
+                nhất, Dash F15 có khả năng chống chịu những cú va đập và xóc nảy trong khi di chuyển.
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer>
+        <div class="containerfull">
+            <div class="container2">
+                <div class="box">
+                    <ul class="thongtin">
+                        <li>Giới thiệu về công ty </li><br>
+                        <li>Chính sách bảo mật</li><br>
+                        <li>Quy chế hoạt động</li><br>
+                        <li>Kiểm tra hóa đơn điện tử</li><br>
+                        <li>Câu hỏi thường gặp mua hàng</li><br>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="thongtin">
+                        <li>Tin khả dụng</li><br>
+                        <li>Tin khuyến mãi</li><br>
+                        <li>Hướng dẫn mua online</li><br>
+                        <li>Hưỡng dẫn mua trả góp</li><br>
+                        <li>Chính sách trả góp</li><br>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="thongtin">
+                        <li>Hệ thống cửa hàng</li><br>
+                        <li>Chính sách đổi trả</li><br>
+                        <li>Hệ thống bảo hành</li><br>
+                        <li>Giới thiệu máy đổi trả </li><br>
+                        <li>Kiểm tra hàng Apple chính hãng</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

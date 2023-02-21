@@ -1,0 +1,273 @@
+ <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Form login unitop.vn</title>
+</head>
+
+<body>
+   
+        <style>
+            .container {
+                max-width: 1980px;
+                margin: 0 auto;
+                padding: 0 auto;
+            }
+
+            .menu>ul>li {
+                display: inline-block;
+                position: relative;
+            }
+
+            .menu ul {
+                height: 70px;
+            }
+
+            .login {
+                float: right;
+                margin: 10px;
+                top: -10px;
+            }
+
+            .menu>ul>li>a {
+                display: block;
+                text-decoration: none;
+                font-variant: small-caps;
+                color: white;
+                padding: 0px 10px;
+                line-height: 40px;
+            }
+
+            .menu>ul>li>a:hover {
+                color: yellow
+            }
+
+            .menu>ul {
+                padding: 0px;
+                margin: 0px;
+                list-style: none;
+                border-radius: 3x;
+                background-color: #24252a;
+                text-align: center;
+            }
+
+            .menu ul ul {
+                position: absolute;
+                display: none;
+                padding: 0px;
+                margin: 0px;
+                list-style: none;
+                border-radius: 3px;
+                width: 200px;
+                background-color: #24252a;
+                box-shadow: 0px 0px 1px gray;
+            }
+
+            .menu ul ul a {
+                display: block;
+                line-height: 30px;
+                color: orangered;
+                text-decoration: none;
+                font-size: medium;
+                padding: 0 10px;
+            }
+
+            .menu>ul>li:hover>ul {
+                display: block;
+            }
+
+            .menu ul ul a:hover {
+                background-color: orangered;
+                color: white;
+            }
+
+            body {
+                background: url('/images/bg.jpeg');
+                background-size: cover;
+                background-position-y: -80px;
+                font-size: 16px;
+            }
+
+            #wrapper {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #form-login {
+                max-width: 400px;
+                background: rgba(0, 0, 0, 0.8);
+                flex-grow: 1;
+                padding: 30px 30px 40px;
+                box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+            }
+
+            .form-heading {
+                font-size: 25px;
+                color: #f5f5f5;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .form-group {
+                border-bottom: 1px solid #fff;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                display: flex;
+            }
+
+            .form-group i {
+                color: #fff;
+                font-size: 14px;
+                padding-top: 5px;
+                padding-right: 10px;
+            }
+
+            .form-input {
+                background: transparent;
+                border: 0;
+                outline: 0;
+                color: #f5f5f5;
+                flex-grow: 1;
+            }
+
+            .form-input::placeholder {
+                color: #f5f5f5;
+            }
+
+            #eye i {
+                padding-right: 0;
+                cursor: pointer;
+            }
+
+            .form-submit {
+                background: transparent;
+                border: 1px solid #f5f5f5;
+                color: #fff;
+                width: 100%;
+                text-transform: uppercase;
+                padding: 6px 10px;
+                transition: 0.25s ease-in-out;
+                margin-top: 30px;
+            }
+
+            .form-submit:hover {
+                border: 1px solid #54a0ff;
+            }
+
+            footer {
+                height: 300px;
+                float: left;
+                width: 100%;
+                background-color: #24252a;
+                clear: both;
+                color: #fef8e6;
+            }
+
+            .box .thongtin {
+                float: left;
+                list-style: none;
+
+            }
+
+            .box {
+                width: 33.33%;
+                float: left;
+            }
+
+            li {
+                padding: 5px 0;
+            }
+
+            li:hover {
+                color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="containerfull padd20">
+            <div class="container2">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a> </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                            <ul>
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">Email</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Góp ý</a> </li>
+                        <li><a href="#">Hỏi đáp</a> </li>
+                        <li><a href="#">Bản đồ</a> </li>
+                        <li class="login"><a href="./dangnhap.html">Đăng Nhập</a></li>
+                        <li class="login"><a href="/pages/dangkiemail.html">Đăng kí</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="wrapper">
+            <form action="" id="form-login">
+                <h1 class="form-heading">Đăng nhập</h1>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="form-input" placeholder="Mật khẩu">
+                    <div id="eye">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <input type="submit" value="Đăng nhập" class="form-submit">
+            </form>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class="containerfull">
+            <div class="container2">
+                <div class="box">
+                    <ul class="thongtin">
+                        <li>Giới thiệu về công ty </li><br>
+                        <li>Chính sách bảo mật</li><br>
+                        <li>Quy chế hoạt động</li><br>
+                        <li>Kiểm tra hóa đơn điện tử</li><br>
+                        <li>Câu hỏi thường gặp mua hàng</li><br>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="thongtin">
+                        <li>Tin khả dụng</li><br>
+                        <li>Tin khuyến mãi</li><br>
+                        <li>Hướng dẫn mua online</li><br>
+                        <li>Hưỡng dẫn mua trả góp</li><br>
+                        <li>Chính sách trả góp</li><br>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul class="thongtin">
+                        <li>Hệ thống cửa hàng</li><br>
+                        <li>Chính sách đổi trả</li><br>
+                        <li>Hệ thống bảo hành</li><br>
+                        <li>Giới thiệu máy đổi trả </li><br>
+                        <li>Kiểm tra hàng Apple chính hãng</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </html>
+</body>
+
+</html>
